@@ -1,3 +1,4 @@
+
 const images = [
   {
     url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -11,4 +12,42 @@ const images = [
     url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     alt: 'Group of Horses Running',
   },
-];
+]; 
+
+
+
+
+
+// const imagesEl = document.querySelector('.gallery') 
+
+// const pictureEl = [];
+
+// for (let i = 0; i < images.length; i += 1) {
+//   const imgEl = images[i];
+//   // const imgEl = images[0]; 
+//   const element = document.createElement('img');
+//   element.alt = imgEl.alt;
+//   element.src = imgEl.url;
+
+//   pictureEl.push(element)
+// };
+
+// // console.log(pictureEl);
+
+// imagesEl.append(...pictureEl);
+
+
+// const ulEl = document.querySelector('.gallery');
+// // console.log(ulEl);
+
+// const lists = document.createElement('li');
+// // console.log(lists);
+
+
+
+
+// lists.append(pictureEl);
+
+// ulEl.append(lists);
+// // console.log(ulEl);
+

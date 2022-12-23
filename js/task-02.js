@@ -5,14 +5,19 @@ const ingredients = [
   'Tomatos',
   'Herbs',
   'Condiments',
-]; for (const ingredient of ingredients) {
+]; 
+
+const lists = document.querySelector('ul');
+
+for (const ingredient of ingredients) {
 
   const list = document.createElement('li');
   list.classList.add('item');
   list.textContent = ingredient;
- 
-  const lists = document.querySelector('ul');
-  lists.prepend(list);
-
-  console.log(list);
+  lists.append(list);
 };
+
+
+// const listsContent = ingredients.map(ingredient => `<li>${ingredient}</li>`)
+//   .join('');
+// lists.insertAdjacentHTML("beforeend" ,listsContent);
