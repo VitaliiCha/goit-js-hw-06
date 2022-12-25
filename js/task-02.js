@@ -9,15 +9,15 @@ const ingredients = [
 
 const lists = document.querySelector('ul');
 
-for (const ingredient of ingredients) {
+// for (const ingredient of ingredients) {
 
-  const list = document.createElement('li');
-  list.classList.add('item');
-  list.textContent = ingredient;
-  lists.append(list);
-};
+//   const list = document.createElement('li');
+//   list.classList.add('item');
+//   list.textContent = ingredient;
+//   lists.append(list);
+// };
 
 
-// const listsContent = ingredients.map(ingredient => `<li>${ingredient}</li>`)
-//   .join('');
-// lists.insertAdjacentHTML("beforeend" ,listsContent);
+const listsContent = ingredients.map(ingredient => `<li class = 'item'>${ingredient}</li>`)
+  .join('');
+lists.insertAdjacentHTML("beforeend" ,listsContent);
