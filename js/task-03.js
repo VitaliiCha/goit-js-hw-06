@@ -14,21 +14,21 @@ const images = [
   },
 ]; 
 
-// const imagesLists = document.querySelector('.gallery');
-// images.forEach(({ url, alt }) => {
-//   const lists = document.createElement('li')
-//   const element = document.createElement('img');
-//   lists.append(element);
-//   element.style.marginBottom = '30px';
-//   element.style.width = '640px';
-//   element.src = url;
-//   element.textContent = alt;
-//   imagesLists.appendChild(lists)
-// });
-
-
 const imagesLists = document.querySelector('.gallery');
-const imgContent = images.map(imgEl => 
-  `<li><img src = ${imgEl.url} alt=${imgEl.alt} width = "640px"/></li>`)
-  .join('');
-imagesLists.insertAdjacentHTML("beforeend" ,imgContent)
+images.forEach(({ url, alt }) => {
+  const lists = document.createElement('li')
+  const element = document.createElement('img');
+  lists.append(element);
+  element.style.marginBottom = '30px';
+  element.style.width = '640px';
+  element.src = url;
+  element.textContent = alt;
+  imagesLists.appendChild(lists)
+});
+
+
+// const imagesLists = document.querySelector('.gallery');
+// const imgContent = images.map(imgEl => 
+//   `<li><img src = ${imgEl.url} alt=${imgEl.alt} width = "640px"/></li>`)
+//   .join('');
+// imagesLists.insertAdjacentHTML("beforeend" ,imgContent)
