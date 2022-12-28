@@ -23,3 +23,7 @@ button {
   cursor: pointer;
 }
  
+.images {
+  width: 640px;
+  margin: 30px;
+}
